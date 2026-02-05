@@ -1,0 +1,39 @@
+.water-drop-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a0a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+
+    .drop {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 0; // Teardrop shape
+        transform: rotate(45deg); // Rotate to look like a drop
+        position: absolute;
+        left: 50%;
+        margin-left: -10px; // Center it
+    }
+
+    .ripple {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,85 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0d; // Slightly different shade for separation
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 24px;
+        letter-spacing: -2px;
+    }
+
+    p {
+        max-width: 600px;
+        color: #a1a1aa;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #27272a;
+        padding-bottom: 8px;
+        display: inline-block;
+    }
+
+    .icons {
+        display: flex;
+        gap: 24px;
+
+        .social-icon {
+            font-size: 24px;
+            color: #fff;
+            transition: transform 0.3s, color 0.3s;
+
+            &:hover {
+                color: #a1a1aa;
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+    .tech-stack-card {
+        background: #121214;
+        padding: 32px;
+        border-radius: 12px;
+        border: 1px solid #27272a;
+
+        .tech-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center; // Center aligns icons
+
+            .tech-icon {
+                font-size: 32px;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease, transform 0.3s ease;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    filter: grayscale(0%);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

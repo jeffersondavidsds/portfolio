@@ -1,0 +1,105 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px; // account for navbar
+
+    .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: 40px;
+        }
+    }
+
+    .text-content {
+        flex: 1;
+
+        .greeting {
+            font-size: 14px;
+            letter-spacing: 4px;
+            margin-bottom: 20px; // Spacing before name
+            color: #ffffff;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            font-size: 80px;
+            line-height: 0.9;
+            font-weight: 900;
+            margin-bottom: 8px; // Small gap between name and role
+
+            @media (max-width: 768px) {
+                font-size: 48px;
+                align-items: center;
+            }
+
+            .first-name {
+                color: #ffffff;
+            }
+
+            .last-name {
+                color: #27272a; // Darker gray/zinc
+                -webkit-text-stroke: 1px #52525b;
+                color: #52525b;
+            }
+        }
+
+        .role {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #a1a1aa;
+            margin-bottom: 32px; // Space before welcome message
+            display: inline-block;
+            width: fit-content;
+            border-bottom: 1px solid #27272a; // Optional underline for style
+            padding-bottom: 4px;
+
+            // Should align with name
+        }
+
+        .welcome {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: #52525b;
+            text-transform: uppercase;
+        }
+    }
+
+    .image-content {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        position: relative; // Needed for potential pseudo-elements or just context
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
+        img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            // Removed partial grayscale to keeping original colors as requested
+            // Adding backlight effect with box-shadow
+            box-shadow: 0 0 80px -10px rgba(255, 255, 255, 0.25);
+            filter: contrast(1.1); // Slight pop to keep it looking premium
+
+            transition: box-shadow 0.5s ease, transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 100px -10px rgba(255, 255, 255, 0.4);
+            }
+        }
+    }
+}
