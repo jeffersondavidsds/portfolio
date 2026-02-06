@@ -7,7 +7,7 @@ import './About.scss';
 const About = () => {
     const socialLinks = [
         { icon: <FaEnvelope />, href: 'mailto:jeffersondavidsd@gmail.com' },
-        { icon: <FaWhatsapp />, href: 'https://wa.me/5521965277553' },
+        { icon: <FaWhatsapp />, href: 'https://wa.me/5521968277553' },
         { icon: <FaInstagram />, href: 'https://www.instagram.com/_jeffslv_?igsh=aTg0aW02dHdmeGg5' },
         { icon: <FaGithub />, href: 'https://github.com/jeffersondavidsds' },
         { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/jeffersonsilvadev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
