@@ -26,6 +26,7 @@ const Hero = () => {
                     className="image-content"
                     initial={{ opacity: 0, scale: 0.8, filter: 'grayscale(100%)' }}
                     whileInView={{ opacity: 1, scale: 1 }}
+                    whileHover={{ filter: 'grayscale(0%)' }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     {/* Using a placeholder if image missing, styles handle the grayscale/look */}

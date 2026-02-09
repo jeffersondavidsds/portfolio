@@ -79,6 +79,7 @@
         display: flex;
         justify-content: flex-end;
         position: relative; // Needed for potential pseudo-elements or just context
+            transition: filter 0.4s ease;
 
         @media (max-width: 768px) {
             justify-content: center;
@@ -88,17 +89,19 @@
             max-width: 400px;
             width: 100%;
             height: auto;
-            border-radius: 4px;
-            // Removed partial grayscale to keeping original colors as requested
+            border-radius: 10px;
             // Adding backlight effect with box-shadow
-            box-shadow: 0 0 80px -10px rgba(255, 255, 255, 0.25);
-            filter: contrast(1.1); // Slight pop to keep it looking premium
+            box-shadow: 0 0 80px -10px rgba(170, 169, 255, 0.25);
+            filter: contrast(1.1);
+
+            // allow color/filter transitions when container or image changes
+            transition: box-shadow 0.5s ease, transform 0.3s ease, filter 0.4s ease;
 
             transition: box-shadow 0.5s ease, transform 0.3s ease;
 
             &:hover {
                 transform: scale(1.02);
-                box-shadow: 0 0 100px -10px rgba(255, 255, 255, 0.4);
+                box-shadow: 0 0 100px -10px rgba(31, 41, 182, 0.76);
             }
         }
     }
