@@ -11,25 +11,25 @@ const Projects = () => {
     const projects = [
         {
             title: 'Ações da Connect',
-            description: 'Conectamos sua empresa com projetos sociais impactantes.',
+            description: 'Projeto de ações sociais, voltado para ongs e empresas sem fins lucrativos, desenvolvido em REACT.JS, Javascript, SCSS, DOM, HTML, TCC de Front-End Vai na Web',
             image: connectImg,
             link: 'https://desafio-final-conect.vercel.app/',
         },
         {
             title: 'GameJam',
-            description: 'Evento para mostrar ao mundo suas habilidades e receber prêmios.',
+            description: 'Projeto desenvolvido utilizando HTML, CSS, baseando-se em um projeto figma próprio, pensado para empresas focadas em games e torneios.',
             image: gamejamImg,
             link: 'https://game-jam-ten.vercel.app/',
         },
         {
             title: 'ReciclaTech',
-            description: 'Dê uma segunda vida aos seus eletrônicos.',
+            description: 'Projeto de reciclagem de eletrônicos, voltado para ongs e empresas de hardware, desenvolvido em HTML, SCSS, DOM, HTML, desenvolvido em colaboração a Vai na Web',
             image: reciclatechImg,
             link: 'https://recicla-tech-ebon-psi.vercel.app/',
         },
         {
             title: 'Verde Ação',
-            description: 'Ser voluntário é plantar esperança e colher transformação.',
+            description: 'Projeto de ação social voltado para o meio ambiente, desenvolvido com HTML, SCSS, DOM',
             image: verdeacaoImg,
             link: 'https://verde-acao-three.vercel.app/',
         },
