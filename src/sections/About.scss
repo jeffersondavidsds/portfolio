@@ -62,9 +62,20 @@
 
         .tech-icons {
             display: flex;
-            flex-wrap: wrap;
-            gap: 24px;
-            justify-content: center; // Center aligns icons
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+
+            .tech-icons-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                justify-content: center;
+            }
+
+            .bottom-row {
+                margin-top: 8px;
+            }
 
             .tech-icon {
                 font-size: 32px;
@@ -80,6 +91,17 @@
                     transform: scale(1.1);
                 }
             }
+        }
+    }
+
+    .footer {
+        margin-top: 48px;
+        text-align: center;
+
+        p {
+            color: #696969;
+            font-size: 14px;
+            margin: 0;
         }
     }
 }

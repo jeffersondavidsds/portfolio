@@ -6,9 +6,25 @@ import connectImg from '../assets/connect.jpg';
 import gamejamImg from '../assets/gamejam.jpg.jpeg';
 import reciclatechImg from '../assets/reciclatech.jpeg';
 import verdeacaoImg from '../assets/verdeacao.jpeg';
+import homecarenoteImg from '../assets/homecarenote.png';
+import spotifyImg from '../assets/spotify.png';
+import netflixImg from '../assets/netflix.png';
+
 
 const Projects = () => {
     const projects = [
+        {
+            title: 'Carta de Amor - Spotify',
+            description: 'Projeto pessoal criado para homenagear e presentar alguém, desenvolvido com REACT.JS, DOM e SCSS',
+            image: spotifyImg,
+            link: 'https://player-spotify-contador.vercel.app/',
+        },
+        {
+            title: 'Cuidadores de Idosos',
+            description: 'Projeto pessoal voltado para público da área da saúde em expecífico, cuidadores de idosos, desenvolvido com REACT.JS, SQL e SQLite3, CRUD E CORS',
+            image: homecarenoteImg,
+            link: 'https://homecarenote.vercel.app/login',
+        },
         {
             title: 'Ações da Connect',
             description: 'Projeto de ações sociais, voltado para ongs e empresas sem fins lucrativos, desenvolvido em REACT.JS, Javascript, SCSS, DOM, HTML, TCC de Front-End Vai na Web',
@@ -33,6 +49,13 @@ const Projects = () => {
             image: verdeacaoImg,
             link: 'https://verde-acao-three.vercel.app/',
         },
+        {
+            title: 'Netflix',
+            description: 'Projeto inicial, onde meu sonho começou a virar realidade, desenvolvido com HTML, CSS.',
+            image: netflixImg,
+            link: 'https://jeffersondavidsds.github.io/Netflix/#',
+        },
+        
     ];
 
     return (

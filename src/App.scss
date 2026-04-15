@@ -4,6 +4,30 @@
     position: relative;
 }
 
+.site-footer {
+    background: #d3d4d4;
+    color: #4b4f57;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+.footer-content p + p {
+    margin-top: 4px;
+}
+
 // Ensure smooth scrolling for hash links
 html {
     scroll-behavior: smooth;

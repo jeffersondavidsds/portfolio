@@ -23,17 +23,26 @@ function App() {
       </AnimatePresence>
 
       {!loading && (
-        <motion.div
-          className="app-content"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <Navbar />
-          <div id="home"><Hero /></div>
-          <div id="about"><About /></div>
-          <div id="projects"><Projects /></div>
-        </motion.div>
+        <>
+          <motion.div
+            className="app-content"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <Navbar />
+            <div id="home"><Hero /></div>
+            <div id="about"><About /></div>
+            <div id="projects"><Projects /></div>
+          </motion.div>
+
+          <footer className="site-footer">
+            <div className="footer-content">
+              <p>&copy; Todos os direitos reservados 2026</p>
+              <p>Desenvolvido por Jefferson David</p>
+            </div>
+          </footer>
+        </>
       )}
     </>
   );

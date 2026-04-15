@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
-import { SiReact, SiVite, SiSass, SiJavascript, SiFramer, SiGit } from 'react-icons/si';
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaEnvelope, FaDatabase } from 'react-icons/fa';
+import { SiReact, SiVite, SiSass, SiJavascript, SiFramer, SiGit, SiSqlite } from 'react-icons/si';
 import './About.scss';
 
 const About = () => {
@@ -21,6 +21,8 @@ const About = () => {
         { icon: <SiGit color="#F05032" />, name: 'Git' },
         { icon: <FaGithub color="#ffffff" />, name: 'GitHub' },
         { icon: <SiFramer color="#0055FF" />, name: 'Framer' },
+        { icon: <FaDatabase color="#f5c542" />, name: 'Database' },
+        { icon: <SiSqlite color="#003b4d" />, name: 'SQLite' },
     ];
 
     return (
@@ -64,11 +66,20 @@ const About = () => {
                     >
                         <h3>Tecnologias</h3>
                         <div className="tech-icons">
-                            {teckStack.map((tech, index) => (
-                                <div key={index} className="tech-icon" title={tech.name}>
-                                    {tech.icon}
-                                </div>
-                            ))}
+                            <div className="tech-icons-row">
+                                {teckStack.slice(0, 6).map((tech, index) => (
+                                    <div key={index} className="tech-icon" title={tech.name}>
+                                        {tech.icon}
+                                    </div>
+                                ))}
+                            </div>
+                            <div className="tech-icons-row bottom-row">
+                                {teckStack.slice(6).map((tech, index) => (
+                                    <div key={index} className="tech-icon" title={tech.name}>
+                                        {tech.icon}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </motion.div>
                 </div>
