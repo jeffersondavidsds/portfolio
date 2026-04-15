@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './Hero.scss';
+import './Home.scss';
 import profileImg from '../assets/profile.png';
 
-const Hero = () => {
+const Home = () => {
     return (
-        <section className="hero">
-            <div className="container hero-content">
+        <section className="home">
+            <div className="container home-content">
                 <motion.div
                     className="text-content"
                     initial={{ opacity: 0, x: -50 }}
@@ -37,4 +37,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Home;

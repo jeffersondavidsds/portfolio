@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './App.scss';
 
 // Placeholder sections - will be replaced by actual components
-import Hero from './sections/Hero';
+import Home from './sections/Home';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import Navbar from './components/Navbar';
@@ -31,7 +31,7 @@ function App() {
             transition={{ duration: 1 }}
           >
             <Navbar />
-            <div id="home"><Hero /></div>
+            <div id="home"><Home /></div>
             <div id="about"><About /></div>
             <div id="projects"><Projects /></div>
           </motion.div>
